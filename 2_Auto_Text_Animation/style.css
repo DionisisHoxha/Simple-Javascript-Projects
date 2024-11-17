@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: salmon;
+  font-family: "Permanent Marker", cursive;
+}
+
+span {
+    display: inline-block;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    bottom: -8px;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;;
+    border-left: 5px solid white;;
+    border-right: 5px solid white;;
+    transition: border 1s;
+    margin-left: 5px;
+    animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+    50% {
+        opacity: 0;
+    }
+}
